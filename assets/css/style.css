@@ -1,0 +1,241 @@
+
+:root{
+    --color-pri : #fcdb00;
+    --color-sec : #010101;
+    --color-dark : #000;
+    --color-white : #fff;
+    --color-grey : #313841;
+    --color-grey2 : #555555;
+    --color-grey3 : #898989;
+    --color-grey4 : #808080;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.section{
+    padding: 10rem 0;
+}
+
+/* html{
+    font-size: 10px;
+} */
+
+/* ********************************* header-section ********************************* */
+
+.header{
+    background-color: var(--color-pri);
+}
+
+.header .navbar-default{
+    background-color: var(--color-pri);
+}
+
+.navbar-brand {
+    padding: 2px 1.5rem;
+}
+
+.header .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 7rem;
+}
+
+.header .navbar-default .navbar-nav>li>a {
+    color: var(--color-sec);
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.header .navbar-default .navbar-nav>li>a::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--color-sec);
+    width: 0;
+    transition: all .5s ease-in-out;
+}
+
+.header .navbar-default .navbar-nav>li>a:hover::before {
+    width: 100%;
+} 
+
+ .inspiRation{
+    margin-top: 7.5rem;
+}
+
+  .pri-heading{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--color-sec);
+    margin-bottom: 3.5rem;
+}
+
+ .sec-heading{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-grey);
+    margin-bottom: 1.5rem;
+}
+
+.inspiRation .para{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-grey2);
+    margin-bottom: 4rem;
+}
+
+.socialLinks a{
+    margin-right: 4rem;
+    color: var(--color-sec);
+}
+
+/* ********************************* feature-section ********************************* */
+
+
+.features{
+    margin-bottom: 1rem;
+}
+
+.heading-wrap{
+    padding:  0 3.5rem;
+    margin-bottom: 9rem;
+}
+
+.featureThumb{
+    margin-bottom: 9rem;
+}
+
+.featureThumb h3{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--color-sec);
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.featureThumb p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-grey3);
+}
+
+/* ********************************* footer-section ********************************* */
+
+.footer{
+    background-color: var(--color-sec);
+}
+
+.footer .pri-heading{
+    color: var(--color-pri);
+}
+
+.footer .sec-heading{
+    color: var(--color-grey4);
+    margin-bottom: 4.5rem;
+}
+
+.intouchBtn{
+    background-color: var(--color-pri);
+    color: var(--color-sec);
+    border: 1px solid var(--color-pri);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.intouchBtn:hover,
+.intouchBtn:focus,
+.intouchBtn:active{
+    background-color: var(--color-sec);
+    color: var(--color-pri);
+}
+
+.intouchBtn, .signupEmail{
+    height: 5rem;
+}
+
+.signupEmail::placeholder{
+    color: var(--color-grey3);
+}
+
+.signupForm{
+    margin-bottom: 8rem;
+}
+
+.footer .socialLinks a{
+    color: var(--color-pri);
+}
+
+.footer .socialLinks{
+    margin-bottom: 12.5rem;
+}
+
+.footerLinks a{
+    color: var(--color-white);
+}
+
+
+
+
+
+@media all and (max-width: 768px){
+    .section{
+        padding: 4rem 0;
+    }
+
+    .header .navbar-default, .featureThumb, .signupEmail, .footer .sec-heading, .footer .socialLinks,
+    .signupForm{
+        margin-bottom: 2rem;
+    }
+
+    .inspiRation{
+        margin-top: 0;
+        margin-bottom: 6rem;
+    }
+   
+    .contact .socialLinks, .signupForm{
+        margin-bottom: 6rem;
+    }
+    .heading-wrap{
+        margin-bottom: 0;
+    }
+    .iPad{
+        width: 100%;
+    }
+    .socialLinks a{
+        margin-right: 0;
+    }
+    .header .navbar-default .navbar-toggle{
+        border-color: var(--color-sec);
+    }
+    .header .navbar-default .navbar-toggle:focus,  
+    .header .navbar-default .navbar-toggle:hover{
+        background-color: transparent;
+    }
+
+    .header .navbar-default .navbar-toggle .icon-bar{
+        background-color: var(--color-sec);
+    }
+    .heading-wrap{
+        padding: 0;
+    }
+    .inspiRation, .socialLinks{
+        text-align: center;
+    }
+    
+
+}
+
+
+
+
+
