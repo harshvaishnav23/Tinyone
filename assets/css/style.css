@@ -93,6 +93,8 @@ ul{
     margin-bottom: 4rem;
 }
 
+
+
 .socialLinks a{
     margin-right: 4rem;
     color: var(--color-sec);
@@ -209,7 +211,7 @@ ul{
         margin-bottom: 0;
     }
     .iPad{
-        width: 100%;
+        width: 90%;
     }
     .socialLinks a{
         margin-right: 0;
